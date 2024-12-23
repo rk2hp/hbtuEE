@@ -1,11 +1,11 @@
 document.addEventListener('scroll', () => {
     const hiddenElement = document.getElementById('logo_name_banner');
-    const scrollThreshold = 100; // Set when to show the element (e.g., after 50px)
+    const scrollThreshold = 100; 
   
     if (window.scrollY > scrollThreshold) {
-      hiddenElement.style.display = 'flex'; // Show the element
+      hiddenElement.style.display = 'flex'; 
     } else {
-      hiddenElement.style.display = 'none'; // Hide the element
+      hiddenElement.style.display = 'none'; 
   
     }
   });
