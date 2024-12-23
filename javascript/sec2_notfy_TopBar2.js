@@ -10,16 +10,16 @@ let currentIndex = 0;
 
     document.getElementById("leftBtn").onclick = () => {
         if (currentIndex > 0) {
-            currentIndex--; // Only decrease if not on the first container
+            currentIndex--; 
             updateSlide();
         }
     };
 
     document.getElementById("rightBtn").onclick = () => {
         if (currentIndex < containerNames.length - 1) {
-            currentIndex++; // Only increase if not on the last container
+            currentIndex++; 
             updateSlide();
         }
     };
 
-    updateSlide(); // Initialize the slide state
+    updateSlide(); 
