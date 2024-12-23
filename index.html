@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hbtu EE</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/section1.css">
+    <link rel="stylesheet" href="css/section2.css">
+
+
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+            list-style: none;
+            box-sizing: border-box;
+        }
+        body{
+            position: relative;
+            overflow-x: hidden;
+        }
+ 
+ 
+    </style>
+
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <ul>
+                <li><a href="index.html" class="navbar_navbar_itm">Home</a></li>
+                <li><a href="addmissions.html" class="navbar_itm">Admissions</a></li>
+                <li><a href=""class="navbar_itm">About Us <i class="fas fa-caret-down"></i></a>
+                    <div class="dropdown_menu">
+                        <ul>
+                            <li><a href="">Contact Us</a></li>
+                            <li><a href="">History</a></li>
+                            <li><a href="">Hand's Message</a></li>
+                        </ul>
+                    </div>
+                </li>
+                     
+                <li><a href="" class="navbar_itm">AcademicsPeople <i class="fas fa-caret-down"></i></a>
+                    <div class="dropdown_menu">
+                        <ul>
+                            <li><a href="#">Post Graduate Program <i class="fas fa-caret-right"></i></a></li>
+                            <li><a href="">Under Graduate Program <i class="fas fa-caret-right"></i></a></li>
+                            <li><a href="">Courses and Laboratories <i class="fas fa-caret-right"></i></a></li>
+                            <li><a href="">Calender <i class="fas fa-caret-right"></i></a></li>
+                            <li><a href="">Admission <i class="fas fa-caret-right"></i></a></li>
+                            <li><a href="">Link Maintained by DOAA<i class="fas fa-caret-right"></i></a></li>
+                            <li><a href="">Archives <i class="fas fa-caret-right"></i></a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="" class="navbar_itm">People <i class="fas fa-caret-down"></i></a>
+                    <div class="dropdown_menu">
+                        <ul>
+                            <li><a href="#">Faculty<i class="fas fa-caret-right"></i></a></li>
+                            <li><a href="#">Students<i class="fas fa-caret-right"></i></a></li>
+                            <li><a href="#">Engineers and Postdocs<i class="fas fa-caret-right"></i></a></li>
+                            <li><a href="#">Awards and Hoours<i class="fas fa-caret-right"></i></a></li>
+                            <li><a href="#">Staff<i class="fas fa-caret-right"></i></a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="" class="navbar_itm">Research <i class="fas fa-caret-down"></i></a>
+                    <div class="dropdown_menu">
+                        <ul>
+                            <li><a href="#">Publications</a></li>
+                            <li><a href="#">Books Published</a></li>
+                            <li><a href="#">Theses</a></li>
+                            <li><a href="#">Ongoing Projects</a></li>
+                            <li><a href="#">Reseach Areas</a></li>
+                            <li><a href="#">Patent Filed & Technologies Developed</a></li>
+                            <li><a href="#">Other<i class="fas fa-caret-right"></i></a></li>
+                           
+                        </ul>
+                    </div>
+                    
+                </li>
+                <li><a href="" class="navbar_itm">Specializations <i class="fas fa-caret-down"></i></a>
+                    <div class="dropdown_menu">
+                        <ul>
+                            <li><a href="#">Faculty<i class="fas fa-caret-right"></i></a></li>
+                            <li><a href="#">Students<i class="fas fa-caret-right"></i></a></li>
+                            <li><a href="#">Engineers and Postdocs<i class="fas fa-caret-right"></i></a></li>
+                            <li><a href="#">Awards and Hoours<i class="fas fa-caret-right"></i></a></li>
+                            <li><a href="#">Staff<i class="fas fa-caret-right"></i></a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="" class="navbar_itm">Facilities <i class="fas fa-caret-down"></i></a></li>
+                <li><a href="" class="navbar_itm">e-Masters <i class="fas fa-caret-down"></i></a></li>
+                <li><a href="" class="navbar_itm">Forms <i class="fas fa-caret-down"></i></a></li>
+            </ul>
+                
+        </nav>
+        <section id="logo_search_bar">
+            <div id="name_logo">
+                <div id="imgbox">
+                    <img  id="hbtuimg" src="images/hbtuimg.png" alt="">
+                </div>
+                <div id="uniname">
+                    <p class="name_text">Electrical Engineering</p>
+                   <p class="name_text">Harcourt Butler Technical University</p>
+                </div>
+            </div>
+            <div class="search-container">
+                <input
+                  type="text"
+                  class="search-bar"
+                  placeholder="Search for something cool..."
+                  onkeyup="handleSearch(event)"
+                />
+                <span class="search-icon">&#128269;</span> <!-- Search Icon -->
+            </div>
+        </section>
+    </header>
+
+    <div id="logo_name_banner">
+        <img  id="banner_img" src="images/hbtuimg.png" alt="">
+        <p id="banner_text">Harcourt Butler Technical University</p>
+    </div>
+
+<!-- ////////////////////////////////////////////////// FIRST SECTION  /////////////////////////////////////////////////////////    -->
+    <section id="section1">
+        <div class="slider-container">
+            <div class="arrow prev" onclick="moveSlider(-1)" aria-label="Previous Slide">
+              <img src="https://cdn-icons-png.flaticon.com/512/271/271220.png" alt="Previous">
+            </div>
+            <div class="slider" id="slider">
+                <img src="images/eeimg2.jpg" alt="Image 6" class="slider_images">
+              <img src="images/eeimg1.jpg" alt="Image 6" class="slider_images">
+              <img src="images/eeimg3.jpg" alt="Image 6" class="slider_images">
+              <img src="images/eeimg4.jpeg" alt="Image 6" class="slider_images">
+              
+              
+            </div>
+            <div class="arrow next" onclick="moveSlider(1)" aria-label="Next Slide">
+              <img src="https://cdn-icons-png.flaticon.com/512/271/271228.png" alt="Next">
+            </div>
+          </div> 
+    </section>
+
+<!-- ////////////////////////////////////////////////// SECTION 2 /////////////////////////////////////////////////////////    -->    
+ 
+<!-- ////////////////////////////////////////////////// NOTIFICATION ,LINKEDN ,CARDS /////////////////////////////////////////////////////////    -->    
+    <section id="section2">
+        <div id="sec2_container1">
+            <div id="notification" class="sec2_container1_child">
+                <div class="main-content-container">
+                    <div class="smaller-screen-header">
+                        <button class="navigation-arrow-button" id="previousButton">&larr;</button>
+                        <div class="container-name-display" id="containerTitle">Container 1</div>
+                        <button class="navigation-arrow-button" id="nextButton">&rarr;</button>
+                    </div>
+                    <div class="larger-screen-header">
+                        <button onclick="displayNewContainer(0)">Announcements</button>
+                        <button onclick="displayNewContainer(1)">Latest News</button>
+                        <button onclick="displayNewContainer(2)">Admission Notice</button>
+                    </div>
+                    <div class="content-slider-wrapper" id="contentSlider">
+                        <div class="individual-content-box" id="announcements">
+                            <li class="announce_content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, neque!</li>
+                            <li class="announce_content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, neque!</li>
+                            <li class="announce_content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, neque!</li>
+                            <li class="announce_content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, neque!</li>
+                            <li class="announce_content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, neque!</li>
+                            <li class="announce_content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, neque!</li>
+                            <li class="announce_content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, neque!</li>
+                            <li class="announce_content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, neque!</li>
+                            <li class="announce_content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, neque!</li>
+                            <li class="announce_content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, neque!</li>
+                            <li class="announce_content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, neque!</li>
+                            <li class="announce_content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, neque!</li>
+                            <li class="announce_content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, neque!</li>
+                        </div>
+                        <div class="individual-content-box">
+                            <li class="announce_content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, neque!</li>
+                            <li class="announce_content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, neque!</li>
+                            <li class="announce_content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, neque!</li>
+                            <li class="announce_content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, neque!</li>
+                            <li class="announce_content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, neque!</li>
+                            <li class="announce_content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, neque!</li>
+                        </div>
+                        <div class="individual-content-box">
+                            <li class="announce_content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, neque!</li>
+                            <li class="announce_content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, neque!</li>
+                            <li class="announce_content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, neque!</li>
+                            <li class="announce_content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, neque!</li>
+                            <li class="announce_content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, neque!</li><li class="announce_content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, neque!</li>
+
+                        </div>
+                    </div>
+                </div>                   
+            </div>
+            <div id="social_links" class="sec2_container1_child">
+                <div class="main-social-container">
+                    <div class="social-header">
+                        <button onclick="displayNewSocialContainer(0)">Linkden</button>
+                        <button onclick="displayNewSocialContainer(1)">Instagram</button>
+                        <button onclick="displayNewSocialContainer(2)">Youtube</button>
+                    </div>
+                    <div class="social-content-slider-wrapper" id="social-contentSlider">
+                        <div class="social-content-box" id="">
+                            <img src="images/linkedin.png" alt="">
+                        </div>
+                        <div class="social-content-box">
+                            <img  src="images/instagram.jpeg" alt="">
+                        </div>
+                        <div class="social-content-box">
+                            <img  src="images/youtube2.png" alt="">
+                        </div>
+                    </div>
+                </div>     
+            </div>
+        </div>
+        <div id="sec2_container2">
+            <div class="sec2_container2_child">
+                <div class="card_image"><img src="images/faculty.avif" alt=""></div>
+                 <div class="card_name">Faculty</div>
+                 <div class="read_more"><button>Read More...</button></div>
+            </div>
+            <div class="sec2_container2_child">
+                <div class="card_image"><img src="images/publications.avif" alt=""></div>
+                <div class="card_name">Publications</div>
+                <div class="read_more"><button>Read More...</button></div>
+            </div>
+            <div class="sec2_container2_child">
+                <div class="card_image"><img src="images/projects1.jpg" alt=""></div>
+                <div class="card_name">Projects</div>
+                <div class="read_more"><button>Read More...</button></div>
+            </div>
+            <div class="sec2_container2_child">
+                <div class="card_image"><img src="images/student.png" alt=""></div>
+                <div class="card_name">Students</div>
+                <div class="read_more"><button>Read More...</button></div>
+            </div>
+        </div>
+    
+    </section>
+<script src="javascript/section1_img_slider.js"></script>
+<script src="javascript/header_banner.js"></script>
+
+    <!-- Script for social header -->
+    <script>
+        function displayNewSocialContainer(index) {
+            const slider = document.getElementById('social-contentSlider');
+            slider.style.transform = `translateX(-${index * 100}%)`;
+        }
+    </script>
+
+    <!-- Script for Larger Screens -->
+    <script>
+        function displayNewContainer(index) {
+            const slider = document.getElementById('contentSlider');
+            slider.style.transform = `translateX(-${index * 100}%)`;
+        }
+    </script>
+
+    <!-- Script for Smaller Screens -->
+    <script>
+        let currentContainerIndex = 0;
+        const containerTitles = ["Announcements", "Latest News", "Admission Notice"];
+        const sliderElement = document.getElementById("contentSlider");
+        const titleBox = document.getElementById("containerTitle");
+
+        const updateContainerSlide = () => {
+            sliderElement.style.transform = `translateX(-${currentContainerIndex * 100}%)`;
+            titleBox.textContent = containerTitles[currentContainerIndex];
+        };
+
+        document.getElementById("previousButton").onclick = () => {
+            if (currentContainerIndex > 0) {
+                currentContainerIndex--;
+                updateContainerSlide();
+            }
+        };
+
+        document.getElementById("nextButton").onclick = () => {
+            if (currentContainerIndex < containerTitles.length - 1) {
+                currentContainerIndex++;
+                updateContainerSlide();
+            }
+        };
+
+        updateContainerSlide(); 
+    </script>
+
+
+</body>
+</html>

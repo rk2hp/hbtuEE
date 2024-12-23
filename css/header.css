@@ -1,0 +1,268 @@
+header{
+    position: relative;
+    width: 100%;
+    height: max-content;
+    /* overflow: visible; */
+    background-color: purple;
+    display:flex ;
+     /* position: absolute; */
+    /* top: 45px;  */
+    flex-direction: column;
+    /* border: 4px solid green ; */
+
+}
+@media (max-width: 706px){
+
+    #navbar > ul {
+        visibility: hidden;
+    }
+
+}
+#navbar{
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 45px;
+    background-color: rgb(27, 48, 88);
+    display: flex;
+    /* visibility: hidden; */
+    padding-inline: 10px;
+    align-items: center;
+    z-index: 20;
+    /* border: 2px solid red; */
+}
+#navbar>ul{
+    display: flex;  
+    flex-direction: row;  
+    justify-content: space-evenly;
+    width: 100%;
+}
+#navbar > ul >li {
+    position: relative;
+    /* border: 2px solid yellow; */
+    padding-bottom: 18px;
+    padding-top: 10px;
+}
+#navbar > ul > li > a {
+    color: white;
+    cursor: pointer;
+}
+
+.dropdown_menu{
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+    
+
+}
+#navbar > ul >li:hover .dropdown_menu{
+    display: block;
+    visibility: visible;
+    opacity: 1;
+    position: absolute;
+    left: -5px;
+    top: 100%;
+    z-index: 200;
+    /* top: calc(100% + 10px); */
+    background-color:rgb(27, 48, 88) ;   
+    
+}
+
+
+.dropdown_menu > ul{
+    display:block;
+    /* padding: 10px; */
+    padding-inline: 13px;
+    width:max-content ;
+    height: auto;
+            
+}
+.dropdown_menu > ul > li{
+    position: relative;
+    padding-block: 6px;
+}
+.dropdown_menu > ul> li> a{
+    color: white;
+}
+.fas{
+    float: right;
+    margin-left: 15px;
+    padding-top: 1.5px;
+    font-size: 15px;
+}
+
+/* /////////////////////////////////// LOGO UNI NAME SEARCH BAR ////////////////////////// */
+
+#logo_search_bar{
+    height: 100px;
+    display: flex;
+    /* background-color: green; */
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    flex-direction: row;
+    background-color: rgb(53, 92, 125);
+    top: 45px;
+    /* border: 2px solid red; */
+    position: relative;
+}
+
+@media (max-width:370px){
+    #logo_search_bar{
+        width: 120vw;
+    }
+}
+
+@media (max-width: 1055px){
+    #logo_search_bar{
+        flex-direction: column;
+        align-items: center;
+        height: 150px;
+    }
+}
+ 
+#name_logo{
+    display: inline;
+    width: max-content;
+    height: auto;
+    display: flex;
+    align-items: center;
+    /* border: 2px solid red; */
+}
+
+
+#hbtuimg{
+    margin: 5px;
+    width: 90px;
+    height: 90px;
+    /* border: 2px solid red; */
+
+}
+
+
+
+#uniname{
+    /* border: 2px solid red; */
+    align-self: center;
+    font-size: 30px;
+    color: white;
+}
+@media (max-width: 706px) {
+   
+    #uniname{
+        font-size: 15px;
+    }
+
+    .name_text{
+        margin-block: 6px;
+    }
+    #name_logo{
+       
+        position: relative;
+        left: -40px;
+    }
+    .search-bar{
+        /* margin-bottom: 5px; */
+        /* height: 10px; */
+        /* padding-block: 5px; */
+        /* font-size: 10px; */
+        width: 200px;
+    }
+    .search-container{
+        /* left:20px ; */
+        /* height: 25px; */
+        bottom:15px ;
+        width: 200px;
+        /* border: 2px solid red; */
+    }
+   
+}
+.name_text{
+    width: 100%;
+
+    white-space: nowrap;
+    overflow: hidden;
+    animation:
+            typing 7s  ,
+            cursor 6s step-end infinite alternate;
+}
+@keyframes typing{
+    from { width: 0}
+}
+
+
+
+
+/* search bar css */
+
+.search-container {
+    position: relative;
+    width: 300px;
+    justify-content: center;
+    max-width: 90%;
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+    right: 10px;
+  }
+
+  .search-bar {
+    width: 300px;
+    padding: 15px 20px;
+    border: none;
+    height: 35px;
+    border-radius: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    outline: none;
+    transition: box-shadow 0.3s ease;
+  }
+
+  .search-bar:focus {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+
+  .search-icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: #636e72;
+    cursor: pointer;
+  }
+
+  .search-icon:hover {
+    color: #2d3436;
+  }
+
+  .search-bar::placeholder {
+    color: #b2bec3;
+    font-style: italic;
+  }
+
+
+/* //////////////////////////////////// NEW ELEMENT JUST BELOW THE NAVBAR ///////////////////////// */
+
+#logo_name_banner{
+    height: 53px;
+    width: 100%;
+    background-color:rgb(53, 92, 125);
+    position: fixed;
+    z-index: 19;
+    top: 45px;
+    opacity: 1;
+    display: none;  
+    align-items: center;
+}
+#banner_img{
+    height: 45px;
+    width: 45px;
+    left: 10px;
+    position: relative;
+}
+#banner_text{
+    color: white;
+    position: relative;
+    left: 15px;
+}
